@@ -1,7 +1,6 @@
 body{
     margin:0;
-    padding:0;
-    font-family: "Roboto", sans-serif;
+    padding:0;  
 }
 h1,h2,h3{
     padding:0;
@@ -22,227 +21,311 @@ button{
     cursor: pointer;
 }
 .container{
-    max-width: 1110px;
+    max-width: 1180px;
     margin: 0 auto;
 }
-.header-top{
-    background: #EFEFEF;
-    display:flex;
-    justify-content:center;
-    padding-top: 16px;
-    padding-bottom:16px;
-}
-.top-menu{
-    display:flex;
-    
-}
-.top-menu>li{
-    margin-right:30px;
-    color: black;
-}
-.tel{
-    font-size:16px;
-    font-weight: 400;
-    color: black;
-  }
-  .recall{
-    border: 2px solid #66c05d;
-    border-radius: 40px;
-    width: 170px;
-    height: 40px;
-    font-weight: 400;
-    font-size: 14px;
-    color: #000;
-    margin-left: 40px;
-  }
-  .medium{
-    padding-top: 20px;
-    padding-bottom: 20px;
+/* -------------- header ----------------------- */
+.header-menu{
+    padding-top: 26px;
+    padding-bottom: 26px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  .header-medium{
-    border-bottom:1px solid #EFEFEF ;
-  }
-  .header-bottom{
+}
+.menu{
     display: flex;
-    justify-content: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-  .bottom-menu{
-    display: flex;
-  }
-  .bottom-menu>li{
-    margin-right: 40px;
-  }
-  .bottom-menu>li:last-child{
-    margin-right: 0px;
-  }
-  .bottom-menu>li>a{
-    font-weight: 400;
-    font-size: 16px;
-    color: #000;
-  }
-  .banner{
-    background: url('../img/banner.png');
-    background-repeat: no-repeat;
-    background-size:cover ;
-    padding-top: 192px;
-    padding-bottom: 192px;
-  }
-  h1{
-    font-weight: 700;
-    font-size: 48px;
-    color: #fff;
-    margin-bottom: 50px;
-  }
-  .banner-text{
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 143%;
-    color: #fff;
-    max-width: 308px;
-    margin-bottom: 50px;
-  }
-  .banner-btn{
-    border: 2px solid #fff;
-    border-radius: 40px;
-    width: 170px;
-    height: 40px;
-    background: #66c05d;font-weight: 400;
-    font-size: 14px;
-    letter-spacing: 0.05em;
-    text-align: center;
-    color: #fff;
-  }
-  .special{
-    background:#efefef;
-    padding-top: 80px;
-  }
-  .special>h2{
-    font-weight: 700;
-    font-style: 24px;
-    color: #000;
-  }
-  .chair{
-    display: flex;
-    justify-content:space-between;
-    margin-top: 38px;
-  }
-  .chair-item{
-    background: #fff;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 30px;
-    padding-left: 30px;
-    display: flex;
-    flex-direction:column ;
-    align-items: center ;
-  }
-  .chair-item>h3{
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 141%;
-    text-align: center;
-    color: #333;
-    max-width: 195px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  .chair-item>span{
-    font-weight: 500;
-    font-size: 21px;
-    letter-spacing: 0.05em;
-    text-align: center;
-    color: #000;
-    margin-bottom: 20px;
-  }
-  .chair-item>button{
-    font-weight: 400;
-    font-size: 14px;
-    letter-spacing: 0.05em;
-    text-align: center;
-    color: #fff;
-    padding: 9px,40px,9px,40px;
-    border-radius: 30px;
-    width: 130px;
-    height: 35px;
-    background: #66c05d;
-  }
-  .bonus{
-    background: #efefef;
-    padding-top: 100px;
-    padding-bottom: 132px;
-  }
-  .bonus-box{
-    display: flex;
-    justify-content: space-between;
-  }
-  .bonus-item1{
-    width: 540px;
-    background: #66c05d;
-    padding: 35px 45px 35px 40px;
-    display: flex;
-    justify-content: space-between;
-    box-sizing: border-box;
-  }
-  .text>h3{
-    font-weight: 700;
-    font-size: 18px;
-    color: #fff;
-    margin-bottom: 25px;
-  }
-  .text>p{
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 141%;
-    color: #fff;
-    max-width: 230px;
-    margin-bottom: 25px;
-  }
-  .text>input{
-    border: none;
-    width: 225px;
-    height: 35px;
-    border-radius:  30px;
-    padding-left: 25px;
-  }
-  .text>input::placeholder{
-    font-weight: 400;
-    font-size: 14px;
-    color: #c4c4c4;
-  }
-  .bonus-item2{
-    width: 540px;
-    background: #66c05d;
-    padding: 35px 45px 35px 40px;
-    box-sizing: border-box;
-  }
-  .bonus-item2>h3{
-    font-weight: 700;
-    font-size: 18px;
-    color: #fff;
-    margin-bottom: 25px;
+}
+.menu>li{
+    margin-right: 46px;
+}
+.menu>li:last-child{
+    margin-right: 0;
+}
+.menu>li>a{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    color: #443737;
+}
+.menu>li>a:hover::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 3px;
+    border-bottom: 3px solid #ffc725;
+    border-radius: 1px;
+    bottom: 0;
+    left: 0;
 
-  }
-  .bonus-item2>p{
+}
+.header-menu>button{
+    display: flex;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: #443737;
+}
+.header-menu>button>img{
+    margin-right: 5px;
+}
+.header-bottom{
+    background-image: url('../img/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 478px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-bottom>p>a{
+    color: #dedede;
+}
+.header-bottom>p{
+    font-family: "Open Sans", sans-serif;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 141%;
-    color: #fff;
-    max-width: 141px;
-    margin-bottom: 25px;
-  }
-  .bonus-item2>button{
-    border: 2px solid #fff;
-    border-radius: 30px;
-    width: 170px;
-    height: 35px;
-    background: #66c05d;
-    font-weight: 400;
-    font-size: 14px;
+    font-size: 15px;
     text-align: center;
+    color: #dedede;
+
+}
+.header-bottom>h1{
+    color: #dedede; 
+    text-align: center;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    font-size: 79px;
     color: #fff;
-  }
+}
+
+/* -------------- menu ----------------------- */
+.banner{
+    background-image: url('../img/homemade-tasty-beef-burger-4BM65XU\ \(1\).png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0px 100px 100px;
+    margin-top: 140px;
+    margin-bottom: 100px;
+}
+.marker{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 129%;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #F37335;
+    display: inline-block;
+    padding: 5px 18.5px 5px;
+    border-radius: 14px;
+    width: 95px;
+    height: 28px;
+    display: flex;flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.banner>h2{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 127%;
+    text-transform: uppercase;
+    color: #fff;
+}
+.text-banner{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #faf9f9;
+    max-width: 308px;
+}
+
+.banner>button{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 129%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #1e2f40; 
+    background: #fbb731;
+    border-radius: 5px;
+    width: 170px;
+    height: 58px;
+}
+
+/* -------------- burger box ----------------------- */
+
+.title{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 127%;
+    text-transform: uppercase;
+    color: #1b2a49;
+    margin-bottom: 34px;
+}
+.burgers-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.burgers-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.burgers-item>h3{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 127%;
+    text-align: center;
+    color: #1b2a49;
+}
+.burgers-item>p{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    text-align: center;
+    color: #979797;
+}
+
+.burgers-item>button{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 129%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #1e2f40;
+    background: #fbb731;
+    border-radius: 5px;
+    padding: 10px 30px 10px 30px;
+    margin-bottom:60px ;
+    
+}
+
+/* -------------- footer ----------------------- */
+
+.footer{
+    background: #1e2f40;
+    padding-top: 110px;
+    padding-bottom: 106px;
+}
+ /* --------------  margin-right: 10%; ----------------------- */
+.footer1{   
+    display: flex;
+    justify-content: space-between;
+}
+
+.basic-item>a{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #dedede;
+    margin-bottom: 9px;
+    }
+    
+.basic-title{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 190%;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 12px;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+}
+.basic-item{
+    margin-bottom: 9px;
+}
+
+.basic-item:last-child{
+    margin-bottom: 0;
+}
+
+.street-time{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #dedede;
+}
+.basic-item{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 160%;
+    color: #faf9f9;
+}
+.tel{
+    display: flex;
+    flex-direction: column;
+}
+.tel>a{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 190%;
+    text-transform: uppercase;
+    color: #fbb731;
+   
+}
+
+/*adaptive*/
+@media (max-width:768px) {
+    .container{
+        padding: 0 15px;
+    }
+    .menu>li{
+        margin-right: 22px;
+    }
+    .header-bottom{
+        background-position: center;
+        
+    }
+    .banner{
+        background-position-x: -74px;
+        padding-left: 40px;
+        margin-top: 72px;
+        margin-bottom: 80px;
+    }
+    .burgers-item>img{
+        width: 359px;
+    }
+    .basic{
+        margin-right: 86px;
+        margin-left: 77px;
+    }
+    .info-basic{
+        margin-right: 145px;
+
+    }
+    .tel{
+        margin-left: 77px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .info{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-content: flex-start;
+
+    }
+}
